@@ -7,6 +7,22 @@ body {
 a {
     color: brown;
 }
+
+.slideanim {
+    visibility:hidden;
+}
+
+.slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+
+#infor{
+    padding-top: 10vh;
+}
   }
   h2 {
       font-size: 50px;
