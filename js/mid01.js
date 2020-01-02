@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
     $(window).scroll(function () {
         $(".fadeout").each(function () {
             var pos = $(this).offset().top;
