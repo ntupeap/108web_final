@@ -15,17 +15,14 @@ $(document).ready(function () {
         var winTop = $(window).scrollTop();
         var mypageh = $('#page0').height();
         var last_page_pos = $('#footer').position().top;
-        var last_page_height = $('#page5_son').height();
-        if ((winTop > mypageh)&&(winTop<(last_page_pos-last_page_height))){
+        var last_page_height = $('#footer').height();
+        if ((winTop > mypageh)&&(winTop<(last_page_pos-(last_page_height*10)))){
             $('#btt').fadeIn();
         } 
         else {
             $('#btt').fadeOut();
         }
-        console.log("last_page_height",last_page_height)
-        console.log("last_page_pos",last_page_pos)
-        console.log("wintop",winTop)
-    })
+    });
 
 
     //  set fade in & out
@@ -81,7 +78,6 @@ $(document).ready(function () {
 $(document).ready(function () {
     var obj_position = $('#page5_son').position().top;
     var obj_height = $('#page5_son').height();
-    var obj_height3 = $('#page3_son').height();
     var next_obj_position = $('#footer').position().top;
     var this_page_height = $('#page5').height();
     $(window).scroll(function () {
@@ -91,17 +87,19 @@ $(document).ready(function () {
         } else {
             $("#page5_son").removeClass("fix5");
         }
-        
-//        console.log('scroll:',scroll_position)
-//        console.log('next_obj_position:',next_obj_position)
-//        console.log('obj_height:',obj_height)
-//        console.log('obj_height3:',obj_height3)
         if (scroll_position > (next_obj_position - obj_height)) {
             $("#page5_son").addClass('fix_bottom_page5_son');
         } else {
             $("#page5_son").removeClass('fix_bottom_page5_son');
         }
-        
+        if (scroll_position > next_obj_position - (2 * obj_height)) {
+            $('.pg5_ori_img').addClass('hidden')
+            $('.pg5_nxt_img').removeClass('hidden')
+            $('.pg5_nxt_img').fadeIn();
+        } else {
+            $('.pg5_ori_img').removeClass('hidden')
+            $('.pg5_nxt_img').addClass('hidden')
+        }
 
 
     });

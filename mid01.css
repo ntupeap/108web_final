@@ -17,9 +17,14 @@ a {
     color: brown;
 }
 
+.pg5img{
+    max-height: 20vh;
+    max-width: 20vw;
+}
+
 .fadeout {
     opacity: 0;
-    transition: opacity 2s linear;
+    transition: opacity 1s linear;
 }
 
 .fadein {
@@ -36,7 +41,8 @@ a {
 
 .fix {
     position: fixed;
-    bottom: 0;
+/*    bottom: 0;*/
+    top: 0;
     width: 100vw;
 }
 
@@ -55,16 +61,11 @@ a {
     padding-top: 200vh;
 }
 
-.row{
-    width: 100%;
-}
-
 h2 {
     font-size: 50px;
     text-transform: uppercase;
     color: #818181;
     font-weight: 600;
-    margin-bottom: 30px;
 }
 
 h5 {
@@ -72,7 +73,6 @@ h5 {
     text-transform: uppercase;
     color: crimson;
     font-weight: 600;
-    margin-bottom: 30px;
 }
 
 
@@ -81,7 +81,6 @@ h4 {
     line-height: 1.375em;
     color: brown;
     font-weight: 400;
-    margin-bottom: 30px;
 }
 
 h33 {
@@ -145,4 +144,40 @@ p5 {
 
 #footer {
     background-color: cornsilk;
+    height: 11vh;
+}
+
+#footer p{
+    margin: 0px;
+}
+
+.row {
+    width: 100%;
+    margin: 0px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.panel {
+    margin-bottom: 0;
+    border-color:brown;
+    
+}
+
+@keyframes up
+{
+    from {top: 20vh;}
+    to {top: 12vh;}
+}
+
+@-webkit-keyframes up
+{
+    from {top: 20vh;}
+    to {top: 12vh;}
+}
+
+#flag {
+    animation: up 1s;
+    -webkit-animation:up 1s;
+    animation-fill-mode:forwards; 
 }
