@@ -87,15 +87,19 @@ $(document).ready(function () {
         if (scroll_position > (next_obj_position - (2*obj_height))){
             $("#C_company").removeClass('hidden');
 //            $("#B_company").addClass('hidden');
+            $(".pg2_circle").addClass('B_to_C');
         } else{
 //            $("#B_company").removeClass('hidden');
             $("#C_company").addClass('hidden');
+            $(".pg2_circle").removeClass('B_to_C');
         }
         
         if ((scroll_position > (next_obj_position - (3*obj_height)))&&(scroll_position < (next_obj_position - (2*obj_height)))){
             $("#B_company").removeClass('hidden');
+            $(".pg2_circle").addClass('A_to_B');
         } else{
             $("#B_company").addClass('hidden');
+            $(".pg2_circle").removeClass('A_to_B');
         }
         
         

@@ -22,6 +22,60 @@ a{
     max-width: 60vw;
 }
 
+.pg2_circle{
+    font-size:36px;
+    color: red;
+    top:40vh;
+    left: -4.5vw;
+    
+}
+
+/*A to B*/
+@keyframes AtoB
+{
+    from {top: 40vh;
+        left: -4.5vw;}
+    to {top: 6vh;
+    left: 11vw;}
+}
+
+@-webkit-keyframes AtoB
+{
+    from {top: 40vh;
+        left: -4.5vw;}
+    to {top: 6vh;
+    left: 11vw;}
+}
+
+.A_to_B {
+    animation: AtoB 1s;
+    -webkit-animation:AtoB 1s;
+    animation-fill-mode:forwards; 
+}
+
+/*B to C*/
+@keyframes BtoC
+{
+    from {top: 6vh;
+    left: 11vw;}
+    to {top:20vh;
+    left: -5.5vw;}
+}
+
+@-webkit-keyframes BtoC
+{
+    from {top: 6vh;
+    left: 11vw;}
+    to {top:20vh;
+    left: -5.5vw;}
+}
+
+.B_to_C {
+    animation: BtoC 1s;
+    -webkit-animation:BtoC 1s;
+    animation-fill-mode:forwards; 
+}
+
 .pg5img{
     max-height: 20vh;
     max-width: 20vw;
