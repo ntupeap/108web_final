@@ -13,8 +13,13 @@ body {
     z-index: 100;
 }
 
-a {
+a{
     color: brown;
+}
+
+.pg2img{
+    max-height: 60vh;
+    max-width: 60vw;
 }
 
 .pg5img{
@@ -52,6 +57,9 @@ a {
     width: 100%;
 }
 
+.fix_bottom_page2_son {
+    padding-top: 400vh;
+}
 
 .fix_bottom_page3_son {
     padding-top: 200vh;
@@ -83,14 +91,6 @@ h4 {
     font-weight: 400;
 }
 
-h33 {
-    color: black;
-}
-
-.affix {
-    top: -40px;
-}
-
 p5 {
     color: #228B22;
     font-style: italic;
@@ -115,7 +115,7 @@ p5 {
 #page2 {
 
     width: 100%;
-    height: 100vh;
+    height: 500vh;
     background-color: cornsilk;
 
 }
