@@ -1,16 +1,42 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900&display=swap');
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align:center;
+    font-size:18px;
+    line-height: 1.3;
+    scroll-behavior: smooth;
+}
+
+/* body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
     font-family: Microsoft JhengHei;
-}
-
+} */
+blockquote {
+    margin:2em auto 0em auto;
+    position: relative;
+    padding:.5em .7em .5em .5em;
+      border-left: .5em solid rgba(0,0,0,.0);
+    max-width:500px;
+    background-color: rgb(0, 0, 0,.02);
+    /*font-size: 93%;*/
+    text-align: left;
+    line-height: 160%;
+    }
 #btt {
     display: none;
     position: fixed;
     bottom: 5vh;
     left: 5vw;
     z-index: 100;
+}
+
+p{
+    line-height: 150%;
+    font-size: 103%;
+    text-align: left;
+    padding-bottom: 0.2em;
 }
 
 a{
@@ -28,6 +54,14 @@ a{
     top:40vh;
     left: -4.5vw;
     
+}
+
+.weapon_intro{
+    padding-top: 10vh;
+}
+
+.weapon_intro_pad{
+    padding-top: 5vh;
 }
 
 /*A to B*/
@@ -58,16 +92,16 @@ a{
 {
     from {top: 6vh;
     left: 11vw;}
-    to {top:20vh;
-    left: -5.5vw;}
+    to {top:-8vh;
+    left: 9vw;}
 }
 
 @-webkit-keyframes BtoC
 {
     from {top: 6vh;
     left: 11vw;}
-    to {top:20vh;
-    left: -5.5vw;}
+    to {top:-8vh;
+    left: 9vw;}
 }
 
 .B_to_C {
@@ -116,15 +150,15 @@ a{
 }
 
 .fix_bottom_page3_son {
-    padding-top: 200vh;
+    padding-top: 400vh;
 }
 
 .fix_bottom_page5_son {
-    padding-top: 200vh;
+    padding-top: 300vh;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 2.3em;
     text-transform: uppercase;
     color: #818181;
     font-weight: 600;
@@ -136,6 +170,43 @@ h5 {
     color: crimson;
     font-weight: 600;
 }
+h6{
+
+    text-align: right;
+     font-size: .9em;
+     line-height: 1.375em;
+     color: #aaa;
+     font-weight: 500;
+ }
+
+ span{
+    margin: 0.5em auto;
+    font-size: 1.3em;
+    line-height: 1.375em;
+    font-weight: 500;
+}
+
+table{
+    margin: 0.5em auto;
+    width: 100%;
+   
+   }
+   th{
+   margin: 0.5em auto;
+       text-align: center;
+       font-size: .9em;
+       line-height: 1.375em;
+       font-weight: 400;
+       background-color: #eee;
+   }
+   td{
+       margin: 0.5em auto;
+       
+       font-size: .9em;
+       line-height: 1.375em;
+       font-weight: 400;
+   
+   }
 
 
 h4 {
@@ -155,29 +226,27 @@ p5 {
     width: 100%;
     height: 100vh;
     padding: 0px;
-    background-color: cornsilk;
+    /* background-color: cornsilk; */
 
 }
 
 #page1 {
-
     width: 100%;
-    height: 100vh;
-
+    height: 350vh;
 }
 
 #page2 {
 
     width: 100%;
     height: 500vh;
-    background-color: cornsilk;
+    /* background-color: cornsilk; */
 
 }
 
 #page3 {
 
     width: 100%;
-    height: 300vh;
+    height: 500vh;
 
 }
 
@@ -185,19 +254,19 @@ p5 {
 
     width: 100%;
     height: 100vh;
-    background-color: cornsilk;
+    /* background-color: cornsilk; */
 
 }
 
 #page5 {
 
     width: 100%;
-    height: 300vh;
+    height: 400vh;
 
 }
 
 #footer {
-    background-color: cornsilk;
+    /* background-color: cornsilk; */
     height: 11vh;
 }
 
@@ -220,14 +289,14 @@ p5 {
 
 @keyframes up
 {
-    from {top: 20vh;}
-    to {top: 12vh;}
+    from {top: 10vh;}
+    to {top: 0vh;}
 }
 
 @-webkit-keyframes up
 {
-    from {top: 20vh;}
-    to {top: 12vh;}
+    from {top: 10vh;}
+    to {top: 0vh;}
 }
 
 #flag {

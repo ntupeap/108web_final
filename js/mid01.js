@@ -115,7 +115,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     var obj_position = $('#page3_son').position().top;
     var obj_height = $('#page3_son').height();
-    var next_obj_position = $('#page4').position().top;
+    var next_obj_position = $('#page5').position().top;
     var this_page_height = $('#page3').height();
     $(window).scroll(function () {
         var scroll_position = $(window).scrollTop();
@@ -130,13 +130,41 @@ $(document).ready(function () {
         } else {
             $("#page3_son").removeClass('fix_bottom_page3_son');
         }
-        if (scroll_position > next_obj_position - (2 * obj_height)) {
-            $('#wire').addClass('hidden')
-            $('#body').removeClass('hidden')
-            $('#body').fadeIn();
+
+
+        //boat
+
+        if (scroll_position > next_obj_position - (4 * obj_height)) {
+            $('#draft_detail').removeClass('hidden');
         } else {
-            $('#wire').removeClass('hidden')
-            $('#body').addClass('hidden')
+            $('#draft_detail').addClass('hidden');
+        }
+
+
+        if (scroll_position > next_obj_position - (3 * obj_height)) {
+            $('#boatt_detail').removeClass('hidden');
+            $('#wire').addClass('hidden');
+        } else {
+            $('#wire').removeClass('hidden');
+            $('#boatt_detail').addClass('hidden');
+        }
+
+        if (scroll_position > next_obj_position - (2 * obj_height)) {
+            $('#weapon').removeClass('hidden');
+            $('#weapon_row').addClass('weapon_intro_pad');
+            $('#weapon_row').removeClass('weapon_intro');
+            $('#weaponn_detail').removeClass('hidden');
+        } else {
+            $('#weapon').addClass('hidden');
+            $('#weapon_row').removeClass('weapon_intro_pad');
+            $('#weapon_row').addClass('weapon_intro');
+            $('#weaponn_detail').addClass('hidden');
+        }
+
+        if ((scroll_position > next_obj_position - (3 * obj_height)) && (scroll_position < next_obj_position - (2 * obj_height))){
+            $('#body').removeClass('hidden');
+        } else {
+            $('#body').addClass('hidden');
         }
 
 
@@ -148,7 +176,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     var obj_position = $('#page5_son').position().top;
     var obj_height = $('#page5_son').height();
-    var next_obj_position = $('#footer').position().top;
+    var next_obj_position = $('#page6').position().top;
     var this_page_height = $('#page5').height();
     $(window).scroll(function () {
         var scroll_position = $(window).scrollTop();
@@ -162,13 +190,27 @@ $(document).ready(function () {
         } else {
             $("#page5_son").removeClass('fix_bottom_page5_son');
         }
+
+        if (scroll_position > next_obj_position - (3 * obj_height)){
+            $('#difficult').addClass('hidden')
+            $('#difficult_row').removeClass('hidden')
+        }else{
+            $('#difficult_row').addClass('hidden')
+            $('#difficult').removeClass('hidden')
+        }
+
+
         if (scroll_position > next_obj_position - (2 * obj_height)) {
             $('.pg5_ori_img').addClass('hidden')
             $('.pg5_nxt_img').removeClass('hidden')
+            $('.dtitle').addClass('hidden')
+            $('.dinfo').removeClass('hidden')
             $('.pg5_nxt_img').fadeIn();
         } else {
             $('.pg5_ori_img').removeClass('hidden')
             $('.pg5_nxt_img').addClass('hidden')
+            $('.dinfo').addClass('hidden')
+            $('.dtitle').removeClass('hidden')
         }
 
 
