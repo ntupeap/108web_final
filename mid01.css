@@ -19,11 +19,20 @@ blockquote {
     padding:.5em .7em .5em .5em;
       border-left: .5em solid rgba(0,0,0,.0);
     max-width:500px;
-    background-color: rgb(0, 0, 0,.02);
+    background-color: rgb(0, 0, 0,.05);
     /*font-size: 93%;*/
     text-align: left;
     line-height: 160%;
     }
+
+    blockquote p{
+        padding-bottom: 0.2em;
+    }
+
+    .highlight {
+        background: linear-gradient(180deg,rgba(255,255,255,0) 70%, #FFD0AE 50%);
+      }
+
 #btt {
     display: none;
     position: fixed;
@@ -44,15 +53,15 @@ a{
 }
 
 .pg2img{
-    max-height: 60vh;
-    max-width: 60vw;
+    max-height: 80vh;
+    max-width: 80vw;
 }
 
 .pg2_circle{
     font-size:36px;
     color: red;
-    top:40vh;
-    left: -4.5vw;
+    top:-8vh;
+    left: 11vw;
     
 }
 
@@ -64,21 +73,21 @@ a{
     padding-top: 5vh;
 }
 
-/*A to B*/
+A to B
 @keyframes AtoB
 {
-    from {top: 40vh;
-        left: -4.5vw;}
-    to {top: 6vh;
-    left: 11vw;}
+    from {top: -8vh;
+        left: 11vw;}
+    to {top: 45vh;
+    left: -9vw;}
 }
 
 @-webkit-keyframes AtoB
 {
-    from {top: 40vh;
-        left: -4.5vw;}
-    to {top: 6vh;
-    left: 11vw;}
+    from {top: -8vh;
+        left: 11vw;}
+    to {top: 45vh;
+    left: -9vw;}
 }
 
 .A_to_B {
@@ -90,18 +99,18 @@ a{
 /*B to C*/
 @keyframes BtoC
 {
-    from {top: 6vh;
-    left: 11vw;}
-    to {top:-8vh;
-    left: 9vw;}
+    from {top: 45vh;
+    left: -9vw;}
+    to {top:5vh;
+    left: 12vw;}
 }
 
 @-webkit-keyframes BtoC
 {
-    from {top: 6vh;
-    left: 11vw;}
-    to {top:-8vh;
-    left: 9vw;}
+    from {top: 45vh;
+    left: -9vw;}
+    to {top:5vh;
+    left: 12vw;}
 }
 
 .B_to_C {
@@ -129,7 +138,7 @@ a{
 }
 
 #infor {
-    padding-top: 10vh;
+    padding-top: 5vh;
 }
 
 .fix {
@@ -146,7 +155,7 @@ a{
 }
 
 .fix_bottom_page2_son {
-    padding-top: 400vh;
+    padding-top: 300vh;
 }
 
 .fix_bottom_page3_son {
@@ -164,12 +173,13 @@ h2 {
     font-weight: 600;
 }
 
-h5 {
-    font-size: 48px;
+h3 {
+    font-size: 1.5em;
     text-transform: uppercase;
-    color: crimson;
+    color: #818181;
     font-weight: 600;
 }
+
 h6{
 
     text-align: right;
@@ -216,6 +226,12 @@ h4 {
     font-weight: 400;
 }
 
+h5 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+}
+
 p5 {
     color: #228B22;
     font-style: italic;
@@ -226,19 +242,19 @@ p5 {
     width: 100%;
     height: 100vh;
     padding: 0px;
-    /* background-color: cornsilk; */
+    background-color: rgb(129,199,212,0.4);
 
 }
 
 #page1 {
     width: 100%;
-    height: 350vh;
+    height: 320vh;
 }
 
 #page2 {
 
     width: 100%;
-    height: 500vh;
+    height: 400vh;
     /* background-color: cornsilk; */
 
 }
@@ -262,6 +278,13 @@ p5 {
 
     width: 100%;
     height: 400vh;
+
+}
+
+#page7 {
+
+    width: 100%;
+    height: 100vh;
 
 }
 
@@ -304,3 +327,8 @@ p5 {
     -webkit-animation:up 1s;
     animation-fill-mode:forwards; 
 }
+
+/* .pg3after{
+    background-color:rgb(165,42,42,0.5);
+    color: #fff;
+} */
